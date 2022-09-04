@@ -54,7 +54,7 @@ export default function ShopByAge() {
                 <h4>0-18 Months</h4>
             </div>
         </div>
-        <div className='age-items'>
+        {/* <div className='age-items'>
             <img src={image1}></img>
             <div className='img-age'>
                 <h4>0-18 Months</h4>
@@ -65,7 +65,7 @@ export default function ShopByAge() {
             <div className='img-age'>
                 <h4>0-18 Months</h4>
             </div>
-        </div>
+        </div> */}
         </motion.div>
         </motion.div>
     </div>

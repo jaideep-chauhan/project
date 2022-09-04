@@ -1,21 +1,21 @@
-import './App.css';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import NavbarDown from './components/NavbarDown';
-import ShopByAge from './components/ShopByAge';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <>
-    <div className="App">
-      <Navbar/>
-      <NavbarDown/>
-    </div>
-    <ShopByAge/>
-    <Carousel/>
-      <Footer/>
-      </>
+    <BrowserRouter>    
+    <Routes>
+          <Route exact path="/" element={ <Home/>}></Route>
+          <Route exact path="/login" element={<Login/>}></Route>
+          <Route exact path="/signup" element={<SignUp/>}></Route>
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
